@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cassioegc/api-league/issues"
   },
-  "homepage": "https://github.com/cassioegc/api-league#readme"
+  "homepage": "https://github.com/cassioegc/api-league#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
