@@ -24,9 +24,9 @@ mongoose.connection.on('error', (error) => {
   console.log('ERROR: ' + error)
 })
 
-console.log('------------------------------------')
+console.log('-------------------------------------')
 console.log(`${process.env.DATABASE_URL}`)
-console.log('------------------------------------')
+console.log('-------------------------------------')
 
 if (mongoose.connection.readyState === isDisconnected) {
   mongoose.connect(`${process.env.DATABASE_URL}`, {
