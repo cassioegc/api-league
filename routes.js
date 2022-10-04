@@ -10,5 +10,11 @@ router.route('/skins')
         res.json({ message: 'post'})
     });
 
+router.route('/hero/:name')
+    .get((req, res) => {
+        const img = `${__dirname}/images/${req.params.name}.jpg`;
+        res.sendFile(img);
+    });
+
 
 module.exports = router;
